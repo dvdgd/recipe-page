@@ -60,7 +60,6 @@ article.recipe-card p, ul, li, tr, td {
 article.recipe-card h1 {
   font-family: 'Young Serif', serif;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
   font-weight: 400;
   color: var(--dark-charcoal-color);
 }
@@ -100,7 +99,7 @@ article.recipe-card li::marker {
   }
 
   article.recipe-card > *:not(figure) {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
 
   article.recipe-card h1 {
@@ -118,13 +117,14 @@ section.recipe ol li::marker {
 }
 
 article p.recipe-description {
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 article div.preparation-time-card {
   background-color: var(--rose-white-color);
   padding: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 
   border-radius: .5rem;
 }
