@@ -1,0 +1,139 @@
+body {
+  background-color: var(--eggshell-color);
+  min-height: 100svh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+  height: 100%;
+  margin: 1rem 0;
+}
+
+article.recipe-card {
+  background-color: var(--white-color);
+  max-width: 700px;
+  border-radius: 1rem;
+
+  margin: 2rem 2rem;
+  padding: 2rem;
+}
+
+article.recipe-card figure img {
+  width: 100%;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+article.recipe-card p, ul, li, tr, td {
+  font-family: Outfit, sans-serif;
+  font-size: .9rem;
+  color: var(--wenge-brown-color);
+}
+
+article.recipe-card h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: var(--dark-charcoal-color);
+}
+
+article.recipe-card ul, ol {
+  padding-left: 1rem;
+}
+
+article.recipe-card li {
+  padding-left: 1rem;
+  margin-bottom: .5rem;
+}
+
+article.recipe-card li::marker {
+  color: var(--primary-color);
+  font-size: .9rem;
+  margin-right: 2rem;
+}
+
+section.recipe ol, ul {
+  margin-left: .5rem;
+}
+
+section.recipe ol li::marker {
+  list-style-type: decimal;
+  font-weight: 600;
+}
+
+article p.recipe-description {
+  margin-bottom: 1.5rem;
+}
+
+article div.preparation-time-card {
+  background-color: var(--rose-white-color);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  border-radius: .5rem;
+}
+
+article div.preparation-time-card h2 {
+  color: var(--secondary-color);
+  font-family: Outfit, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  margin-bottom: 1rem;
+}
+
+section.recipe h2 {
+  font-family: 'Young Serif', serif;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  margin-bottom: 1.5rem;
+}
+
+section.recipe:not(:last-child) {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: .5px var(--wenge-brown-color) solid;
+}
+
+section.recipe > p {
+  margin-bottom: 1.5rem;
+}
+
+section.recipe table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+section.recipe table tr > th {
+  width: 45%;
+}
+
+section.recipe table th, td {
+  font-family: 'Outfit', sans-serif;
+  font-size: .9rem;
+  font-weight: 600;
+  text-align: start;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+
+  padding: .75rem 1rem;
+}
+
+section.recipe table tbody tr:not(:last-child) {
+  border-bottom: 1px solid var(--light-grey-color);
+}
+
+section.recipe table tbody td {
+  color: var(--primary-color);
+  font-weight: 700;
+}
