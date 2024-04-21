@@ -80,6 +80,34 @@ article.recipe-card li::marker {
   margin-right: 2rem;
 }
 
+@media screen and (max-width: 576px) {
+  body {
+    background-color: var(--white-color);
+  }
+
+  main {
+    margin: 0;
+  }
+  
+  article.recipe-card {
+    margin: 0;
+    padding: 0;
+  }
+
+  article.recipe-card > figure {
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  article.recipe-card > *:not(figure) {
+    margin: 0 1rem;
+  }
+
+  article.recipe-card h1 {
+    font-size: 2rem;
+  }
+}
+
 section.recipe ol, ul {
   margin-left: .5rem;
 }
